@@ -1,9 +1,13 @@
+import React from "react";
+
+import styles from "./Marketplace.module.css";
+
 import { navigate } from "@reach/router"
 import Moralis from "moralis"
-import React from "react"
-import Logout_bttn from "../components/logout_bttn"
-import Main_nav from "../components/main_nav"
-import Store_card from "../components/store_card"
+
+import Logout_bttn from "../../components/logout_bttn"
+import Main_nav from "../../components/main_nav"
+import Store_card from "../../components/store_card"
 
 
 

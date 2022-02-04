@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {MoralisProvider} from "react-moralis";
-import './index.css';
 import App from './App';
+import './index.css';
+
+
+import {MoralisProvider} from "react-moralis";
 import reportWebVitals from './reportWebVitals';
 
 const appId = "zLRtY4Sr9aU8MwX3YkTsb2g4LepZjIruPWlQdyD3"

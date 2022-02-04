@@ -1,22 +1,51 @@
-import {Router} from '@reach/router'
-import Landing from './views/landing';
 import React from 'react';
-import Marketplace from './views/marketplace';
-import Subscriptions from './views/subscriptions';
-import Chosen_store from './views/chosen_store';
-import Chosen_nft from './views/chosen_nft';
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import Landing from './routes/Landing/Landing';
+
+import Shared from './routes/Shared/Shared';
+
+import Marketplace from './routes/Marketplace/Marketplace';
+import ChosenStore from './routes/ChosenStore/ChosenStore';
+import ChosenNFT from './routes/ChosenNFT/ChosenNFT';
+
+import Subscriptions from './routes/Subscriptions/Subscriptions';
+import ChosenSubscription from './routes/ChosenSubscription/ChosenSubscription';
+
+import Err from './routes/Err/Err';
 
 
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Landing path="/"/>
-      <Marketplace path="/marketplace" />
-      <Subscriptions path="/subscriptions"/>
-      <Chosen_store path="/store/1"/>
-      <Chosen_nft path="/store/nft/1"/>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+
+        {/* Landing page */}
+        <Route path='/' element={<Landing/>}/>
+
+
+        {/* Shared routes with common top navbar */}
+        <Route path='app' element={<Shared />}>
+
+          {/* View marketplaces and shop for NFTs */}
+          <Route path='marketplace' element={<Marketplace/>}/>
+          <Route path='marketplace/store000' element={<ChosenStore/>}/>
+          <Route path='marketplace/store000/nft000' element={<ChosenNFT/>}/>
+
+          {/* <Routes to ma>nage subscription NFTs */}
+          <Route path='subscriptions' element={<Subscriptions/>}/>
+          <Route path='subscriptions/sub00' element={<ChosenSubscription/>}/>
+
+        </Route>
+        
+
+        {/* 404 route */}
+        <Route path='*' element={<Err />} />
+
+      </Routes>
+    </BrowserRouter>
   </div>
   )
 
