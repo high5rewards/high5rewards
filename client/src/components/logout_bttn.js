@@ -2,7 +2,7 @@ import React from "react"
 import Moralis from "moralis"
 import { navigate } from '@reach/router'
 
-const LogoutBttn = props => {
+const Logout_bttn = props => {
         async function Logout() {
             await Moralis.User.logOut
             navigate("/")
@@ -13,4 +13,4 @@ const LogoutBttn = props => {
             </div>
             )
 }
-export default LogoutBttn
+export default Logout_bttn

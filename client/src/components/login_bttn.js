@@ -2,11 +2,11 @@ import React from "react"
 import Moralis from "moralis"
 import { navigate } from '@reach/router'
 
-const LoginBttn = props => {
+const Login_bttn = props => {
         async function Login() {
             const user = await Moralis.authenticate()
             console.log(user.id)
-            navigate("/dashboard")
+            navigate("/marketplace")
             }
         return(
             <div>
@@ -14,4 +14,4 @@ const LoginBttn = props => {
             </div>
             )
 }
-export default LoginBttn
+export default Login_bttn

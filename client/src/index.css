@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.store_nft_container{
+  display: flex;
+  gap: 2em;
+}
