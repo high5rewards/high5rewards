@@ -1,23 +1,14 @@
-import Moralis from "moralis"
-import {useMoralis} from "react-moralis"
-
+import {Router} from '@reach/router'
+import Login from './views/login';
+import React from 'react';
 
 function App() {
-
-  const {authenticate, isAuthenticated, user} = useMoralis()
-
-  if(!isAuthenticated){
-    return(
-      <div>
-          <button onClick={authenticate}>Log in</button>
-      </div>
-    )
-  }
-  return(
-    <div>
-      <p>{user.getUsername()}</p>
-      <p>{user.get("ethAddress")}</p>
-    </div>
+  return (
+    <div className="App">
+    <Router>
+      <Login path="/"/>
+    </Router>
+  </div>
   )
 
 }
