@@ -13,6 +13,9 @@ import ChosenNFT from './routes/ChosenNFT/ChosenNFT';
 import Subscriptions from './routes/Subscriptions/Subscriptions';
 import ChosenSubscription from './routes/ChosenSubscription/ChosenSubscription';
 
+import VendorDashboard from './routes/VendorDashboard/VendorDashboard';
+
+
 import Err from './routes/Err/Err';
 
 
@@ -34,9 +37,13 @@ function App() {
           <Route path='marketplace/store000' element={<ChosenStore/>}/>
           <Route path='marketplace/store000/nft000' element={<ChosenNFT/>}/>
 
-          {/* <Routes to ma>nage subscription NFTs */}
+          {/* Routes to manage subscription NFTs */}
           <Route path='subscriptions' element={<Subscriptions/>}/>
           <Route path='subscriptions/sub00' element={<ChosenSubscription/>}/>
+
+          {/* Display and manage vendor profile (city, name) and mint NFTs to deploy to marketplace */}
+          <Route path='vendor' element={<VendorDashboard/>}/>
+
 
         </Route>
         
