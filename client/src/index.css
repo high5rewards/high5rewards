@@ -55,8 +55,14 @@ div{
 /* Main nav */
 .nav_main {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+
+  position: relative; 
+  top: -1em;
+}
+.nav_main > *{
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 

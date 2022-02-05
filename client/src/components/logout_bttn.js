@@ -9,7 +9,7 @@ const Logout_bttn = props => {
             }
         return(
             <div>
-                <button onClick={Logout}>Leave App</button>
+                <button onClick={Logout}>disconnect wallet</button>
             </div>
             )
 }

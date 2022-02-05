@@ -1,16 +1,16 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const Main_nav = props => {
     return(
-        <div>
-            <div class="nav_main">
-                <h1>High 5 Rewards</h1>
-                <div>
-                    <a href="/marketplace">marketplace</a>
-                    <a href="/subscriptions">subscriptions</a>
-                </div>
-            </div>
-        </div>
+
+        <ul class="nav_main">
+            <Link to='marketplace'>Marketplace</Link>
+            <Link to='subscriptions'>Subscriptions</Link>
+            <Link to='vendor'>Vendor Dashboard</Link>
+        </ul>
+
         )
 }
 export default Main_nav
