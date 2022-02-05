@@ -20,6 +20,9 @@ contract RewardsMarket is ReentrancyGuard {
     //no of items sold
     Counters.Counter private _itemsSold;
 
+    //no of vendors
+    Counters.Counter private _vendorIds;
+
     //var for owner of contract
     address payable owner;
 
@@ -43,9 +46,21 @@ contract RewardsMarket is ReentrancyGuard {
         bool sold;                      //is it sold
     }
 
+    //struct for each vender
+    struct Vendor {
+        uint vendorId;
+        address vendorAddress;
+        string vendorName;
+        string vendorBio;
+        string vendorCity;
+    }
+
     //track all items created
     //item Id to Market Item
     mapping(uint256 => MarketItem) private idToMarketItem;
+
+    //track all vendors
+    mapping(uint256 => Vendor) private idToVendor;
 
     //event to tell item is created
     event MarketItemCreated (
@@ -56,6 +71,15 @@ contract RewardsMarket is ReentrancyGuard {
         address owner,
         uint256 price,
         bool sold
+    );
+
+    //event to tell vendor is created
+    event VendorCreated (
+        uint indexed vendorId,
+        address indexed vendorAddress,
+        string vendorName,
+        string vendorBio,
+        string vendorCity
     );
 
     //function to view listingPrice
@@ -105,6 +129,37 @@ contract RewardsMarket is ReentrancyGuard {
             false);
     }
 
+    //function to create Vendor
+    function createVendor(
+        string memory _vendorName,
+        string memory _vendorBio,
+        string memory _vendorCity
+    ) public payable nonReentrant {
+
+        _vendorIds.increment();
+
+        uint256 vendorId = _vendorIds.current();
+
+        idToVendor[vendorId] = Vendor(
+            vendorId,
+            msg.sender,
+            _vendorName,
+            _vendorBio,
+            _vendorCity
+        );
+
+        //announce vendor created
+        emit VendorCreated (
+            vendorId,
+            msg.sender,
+            _vendorName,
+            _vendorBio,
+            _vendorCity
+        );
+
+    }
+
+
     //init sale
     function createMarketSale(
         address nftContract,
@@ -130,6 +185,17 @@ contract RewardsMarket is ReentrancyGuard {
         idToMarketItem[itemId].sold = true;
         _itemsSold.increment();
         
+    }
+
+    function fetchVendor() public view returns (Vendor memory) {
+        uint vendorCount = _vendorIds.current();
+
+        for (uint i = 0; i < vendorCount; i++) {
+            if (idToVendor[i + 1].vendorAddress == msg.sender) {
+                return idToVendor[i + 1];
+            }
+        }
+
     }
 
     //fetch all items on the market

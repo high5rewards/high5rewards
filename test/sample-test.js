@@ -32,6 +32,8 @@ describe("RewardsMarket", function () {
     //ether is placeholder, we are using MATIC
     const auctionPrice = ethers.utils.parseUnits('5', 'ether')
 
+    await market.createVendor("Loyal Beans", "Coffee Shop", "Amsterdam")
+
     await reward.createToken("./LOYALBEANS5.png")
     await reward.createToken("./LOYALBEANS10.png")
   
@@ -42,6 +44,10 @@ describe("RewardsMarket", function () {
     //the "_" skips first address because first address deploys the contracts
     //we dont buyer and seller to be same
     const[_, buyerAddress] = await ethers.getSigners()
+
+    vendor = await market.fetchVendor()
+    
+    console.log('Vendor: ',vendor)
 
     await market.connect(buyerAddress).createMarketSale(rewardContractAddress, 1, {value: auctionPrice})
     
