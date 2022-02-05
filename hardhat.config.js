@@ -9,7 +9,7 @@ module.exports = {
     },
     mumbai: {
       //url: "ADD_RPC_URL",
-      url: process.env.MORALIS_SERVER_URL,
+      url: process.env.MORALIS_RPC,
       //accounts: "ADD_ACCOUNT_PRIVATE_KEY",
       accounts: [process.env.YOUR_PRIVATE_ACCOUNT_KEY],
     },
