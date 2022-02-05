@@ -1,6 +1,8 @@
 import React from "react"
 import Moralis from "moralis"
 
+import { Button } from '@mui/material';
+
 import { useNavigate } from 'react-router-dom';
 
 const Logout_bttn = props => {
@@ -13,7 +15,7 @@ const Logout_bttn = props => {
             }
         return(
             <div>
-                <button onClick={Logout}>disconnect wallet</button>
+                <Button onClick={Logout} variant='contained' size="small" color="success">disconnect wallet</Button>
             </div>
             )
 }

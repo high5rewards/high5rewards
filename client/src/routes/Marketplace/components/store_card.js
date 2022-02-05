@@ -2,11 +2,19 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
+import { useNavigate } from 'react-router-dom';
+
+
 const Store_card = props => { {
+
     const {storeName} = props
+
+    let navigate = useNavigate()
+
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardMedia
@@ -23,12 +31,12 @@ const Store_card = props => { {
             </Typography>
             </CardContent>
             <CardActions>
-            <Button href="/store/1"size="small">Subscriptions</Button>
-            <Button size="small"></Button>
+            <Button onClick={() => navigate('store000')} size="small" variant='contained' size="small" color="success">Subscriptions</Button>
             </CardActions>
         </Card>
         );
     }
 }
+
 
 export default Store_card

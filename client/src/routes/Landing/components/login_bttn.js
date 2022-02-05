@@ -3,6 +3,9 @@ import Moralis from "moralis"
 
 import { useNavigate } from 'react-router-dom';
 
+import { Button } from '@mui/material';
+
+
 const Login_bttn = props => {
 
         let navigate = useNavigate();
@@ -15,7 +18,7 @@ const Login_bttn = props => {
             
         return(
             <div>
-                <button onClick={Login}>Enter App</button>
+                <Button onClick={Login} variant='contained' size="small" color="success">Enter App</Button>
             </div>
             )
 }

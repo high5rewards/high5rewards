@@ -5,7 +5,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
+import { useNavigate } from 'react-router-dom';
+
 const NFT_card = props => {
+
+    let navigate = useNavigate();
+
     return (
         <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
@@ -24,7 +29,7 @@ const NFT_card = props => {
             </CardContent>
         </CardActionArea>
         <CardActions>
-            <Button href ="/store/nft/1" size="small" color="primary">
+            <Button onClick={() => navigate('/app/marketplace/store000/nft000')} variant='contained' size="small" color="success">
             Purchase
             </Button>
         </CardActions>

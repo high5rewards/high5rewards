@@ -10,7 +10,7 @@ import Store_card from "./components/store_card"
 
 
 const Marketplace = props => {
-    const storeName = "Mocha Maddness"
+    const storeName = "Mocha Madness"
 
     return(
         <div>
