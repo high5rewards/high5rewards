@@ -2,8 +2,8 @@ import React from "react";
 
 import { Outlet } from "react-router-dom";
 
-import Main_nav from "../../components/main_nav"
-import Logout_bttn from "../../components/logout_bttn"
+import Main_nav from "./components/main_nav"
+import Logout_bttn from "./components/logout_bttn"
 
 
 import styles from "./Shared.module.css";

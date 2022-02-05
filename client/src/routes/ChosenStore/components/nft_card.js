@@ -12,7 +12,7 @@ const NFT_card = props => {
             <CardMedia
             component="img"
             height="140"
-            image={require("../images/coffee.png")}
+            image={require("../../../images/coffee.png")}
             />
             <CardContent>
             <Typography gutterBottom variant="h5" component="div">

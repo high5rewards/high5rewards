@@ -11,7 +11,7 @@ import styles from "./VendorDashboard.module.css";
 function VendorDashboard() {
   return (
     <div>
-        VendorDashboard
+        <h2>VendorDashboard</h2>
     </div>
   );
 }

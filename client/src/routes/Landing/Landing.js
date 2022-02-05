@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from "./Landing.module.css";
 
-import Landing_nav_bottom from "../../components/landing_nav_bottom"
-import Landing_nav_top from "../../components/landing_nav_top"
-import Login_bttn from "../../components/login_bttn"
+import Landing_nav_bottom from "./components/landing_nav_bottom"
+import Landing_nav_top from "./components/landing_nav_top"
+import Login_bttn from "./components/login_bttn"
 
 
 function Landing() {

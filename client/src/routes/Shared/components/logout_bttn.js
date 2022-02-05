@@ -1,8 +1,12 @@
 import React from "react"
 import Moralis from "moralis"
-import { navigate } from '@reach/router'
+
+import { useNavigate } from 'react-router-dom';
 
 const Logout_bttn = props => {
+
+        let navigate = useNavigate();
+
         async function Logout() {
             await Moralis.User.logOut
             navigate("/")

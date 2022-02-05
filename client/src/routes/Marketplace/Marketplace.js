@@ -5,7 +5,7 @@ import styles from "./Marketplace.module.css";
 import { navigate } from "@reach/router"
 import Moralis from "moralis"
 
-import Store_card from "../../components/store_card"
+import Store_card from "./components/store_card"
 
 
 
