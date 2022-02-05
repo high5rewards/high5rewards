@@ -13,7 +13,7 @@ import styles from "./VendorDashboard.module.css";
 function VendorDashboard() {
   return (
     <div>
-        <h2>VendorDashboard</h2>
+        <h1>VendorDashboard</h1>
         <div>Edit profile: vendor name, location</div>
         <div>Display NFTs already minted</div>
         <MintButton />
