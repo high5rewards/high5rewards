@@ -7,17 +7,25 @@ import Moralis from "moralis"
 
 import Store_card from "./components/store_card"
 
+import coffee from '../../images/coffee.png'
+import wine from '../../images/wine.png'
 
 
 const Marketplace = props => {
-    const storeName = "Mocha Madness"
+    const storeName0 = "Mocha Madness"
+    const storeDesc0 = 'A coffee shop where devs get together.'
+
+    const storeName1 = "Aya's Winery"
+    const storeDesc1 = 'Treat yourself with a bottle of natural wine.'
+
 
     return(
-        <div>
-            <h1>This is the Marketplace</h1>            
-            <div>
-            {/* Iterate through the vendor list */}
-            <Store_card storeName={storeName} />
+        <div>     
+            <div id={styles.stores}>
+                {/* Iterate through the vendor list */}
+                <Store_card storeName={storeName0} storeDesc={storeDesc0} storeImg={coffee} />
+
+                <Store_card storeName={storeName1} storeDesc={storeDesc1} storeImg={wine} />
             </div>
         </div>
     )

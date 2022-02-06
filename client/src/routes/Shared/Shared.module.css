@@ -6,6 +6,7 @@
 
     display: flex;
     
+    border-bottom: 3px solid #616161;
 }
 
 #sharenav{

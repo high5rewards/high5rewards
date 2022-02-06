@@ -9,31 +9,44 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 
 
+
+
+
 const Store_card = props => { {
 
     const {storeName} = props
+    const {storeDesc} = props
+    const {storeImg} = props
 
     let navigate = useNavigate()
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: '#616161', border: '2px solid #00e676'}}>
+
             <CardMedia
                 component="img"
                 height="140"
-                image={require("../../../images/coffee.png")}
+                image={storeImg}
+                style={{
+                    borderBottom: '2px solid #00e676'
+                }}
             />
 
             <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-                {storeName}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-                A coffee shop where devs get together. 
-            </Typography>
+                <Typography gutterBottom variant="h5" component="div" style={{ color: '#212121'}}>
+                    {storeName}
+                </Typography>
+                <Typography variant="body2" style={{ color: '#212121', }}>
+                    {storeDesc}
+                </Typography>
             </CardContent>
+
             <CardActions>
-            <Button onClick={() => navigate('store000')} size="small" variant='contained' size="small" color="success">Subscriptions</Button>
+                <Button onClick={() => navigate('store000')} size="small"  size="small" style={{
+                    color: '#212121'
+                }}>Subscriptions</Button>
             </CardActions>
+
         </Card>
         );
     }
