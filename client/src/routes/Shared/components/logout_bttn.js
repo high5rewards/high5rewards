@@ -5,6 +5,8 @@ import { Button } from '@mui/material';
 
 import { useNavigate } from 'react-router-dom';
 
+import styles from './logout_bttn.module.css'
+
 const Logout_bttn = props => {
 
         let navigate = useNavigate();
@@ -14,8 +16,11 @@ const Logout_bttn = props => {
             navigate("/")
             }
         return(
-            <div>
-                <Button onClick={Logout} variant='contained' size="small" color="success">disconnect wallet</Button>
+            <div id={styles.logout}>
+                <Button onClick={Logout} variant='outlined' size="small" style={{
+                    color: '#00e676',
+                    borderColor: '#00e676',
+                }}>disconnect wallet</Button>
             </div>
             )
 }

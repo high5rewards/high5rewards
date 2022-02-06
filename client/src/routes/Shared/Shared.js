@@ -12,12 +12,15 @@ function Shared() {
   return (
     <div>
 
-      <h1>High 5 Rewards</h1>
+    <nav id={styles.Shared}>
+      <h3>High 5 Rewards</h3>
 
-      <div id={styles.Shared}>
+      <div id={styles.sharenav}>
         < Main_nav />
         <Logout_bttn />
       </div>
+    </nav>
+
 
 
       {/* Outlet to render nested routes */}

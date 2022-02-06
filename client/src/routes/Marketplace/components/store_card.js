@@ -18,10 +18,11 @@ const Store_card = props => { {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardMedia
-            component="img"
-            height="140"
-            image={require("../../../images/coffee.png")}
+                component="img"
+                height="140"
+                image={require("../../../images/coffee.png")}
             />
+
             <CardContent>
             <Typography gutterBottom variant="h5" component="div">
                 {storeName}

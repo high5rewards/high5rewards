@@ -19,8 +19,13 @@ const Login_bttn = props => {
             
         return(
             <div id={styles.logbtn}>
-                <Button onClick={Login} variant='contained' size="large" color="success">Enter App</Button>
+                <Button onClick={Login} variant='outlined' size="large" style={{
+                color: '#00e676',
+                borderColor: '#00e676',
+            }}>Enter App</Button>
             </div>
             )
+
+
 }
 export default Login_bttn
