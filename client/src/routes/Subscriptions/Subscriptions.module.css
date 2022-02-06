@@ -1,0 +1,52 @@
+#subs{
+    margin-left: 1.25em;
+    position: relative;
+    bottom: 1em;
+}
+
+/* display subscriptions  */
+.sublist{
+    display: flex;
+}
+
+/* subscription image and labels */
+.subcard{
+    width: 12em;
+    margin: 0;
+    margin-right: 5em;
+    padding: 0;
+    
+    position: relative;
+    bottom: 1em;
+}
+
+/* subscription image */
+.mySub{
+    /* width: 10em; */
+    height: 10em;
+    width: 12em;
+
+    border: 1px solid #00e676;
+    border-radius: 3%;
+}
+
+/* subscription label container */
+.label{
+    width: 12em;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+.label>*{
+    justify-self: center;
+}
+
+/* keep everything visible on pageload for mock UI */
+#rewards{
+    position: relative;
+    bottom: 1em;
+}
+#rewards+div{
+    position: relative; 
+    bottom: 3em;
+}
