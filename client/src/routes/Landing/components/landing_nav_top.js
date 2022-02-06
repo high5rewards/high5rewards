@@ -5,7 +5,7 @@ import styles from './landing_nav_top.module.css'
 const Landing_nav_top = props => {
     return(
         <div id={styles.main}>
-            <h2>High 5 Rewards</h2>
+            <h4>High 5 Rewards</h4>
             <ul id={styles.toplist}>
                 <li><h5>FAQs</h5></li>
                 <li><h5>Developers</h5></li>
