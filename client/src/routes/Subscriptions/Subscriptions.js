@@ -16,7 +16,7 @@ function Subscriptions() {
         <div className={styles.subcard}>
           <img className={styles.mySub} src={loyalBean} alt='loyalBean'/>
           <div className={styles.label}>
-            <div>6 months</div>
+            <div>6 Months Loyal Bean</div>
             <div>Mocha Madness</div>
           </div>
         </div>
@@ -24,7 +24,7 @@ function Subscriptions() {
         <div className={styles.subcard}>
           <img className={styles.mySub} src={wine} alt='wine'/>
           <div className={styles.label}>
-            <div>3 months</div>
+            <div>3 Months Natural Wine</div>
             <div>Aya's Winery</div>
           </div>
         </div>
@@ -35,7 +35,7 @@ function Subscriptions() {
       <div className={styles.subcard}>
         <img className={styles.mySub} src={rewardCoffee} alt='rewardCoffee'/>
         <div className={styles.label}>
-            <div>1 month free coffee!</div>
+            <div>1 Month Free Coffee!</div>
             <div>Mocha Madness</div>
         </div>
       </div>
