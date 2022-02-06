@@ -8,6 +8,12 @@ import styles from "./VendorDashboard.module.css";
  * 
  * mint button
  * display NFTs already minted
+ * 
+ *   vendorId: BigNumber { value: "1" },
+  vendorAddress: '',
+  vendorName: 'Mocha Madness',
+  vendorBio: 'Coffee Shop',
+  vendorCity: 'Amsterdam'
  */
 
 function VendorDashboard() {

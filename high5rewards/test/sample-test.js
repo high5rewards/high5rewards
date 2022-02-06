@@ -6,15 +6,19 @@ describe("RewardsMarket", function () {
     
     //get contracts associated with NFTMarket.sol
     const RewardsMarket = await ethers.getContractFactory("RewardsMarket")
+
     //deploy the contract factory
     const market = await RewardsMarket.deploy()
+
     //deploy contract and wait to fulfil
     await market.deployed()
+
     //fetch market contract address
     const marketAddress = market.address
 
     //get contracts for NFT.sol
     const Reward = await ethers.getContractFactory("Reward")
+
     //pass market contract address to nft contract constructor
     const reward = await Reward.deploy(marketAddress)
     await reward.deployed()
@@ -55,6 +59,7 @@ describe("RewardsMarket", function () {
 
     //fetch items asynchronously
     items = await Promise.all(items.map(async i => {
+      
       //fetching token URI
       const tokenUri = await reward.tokenURI(i.tokenId)
       let item = {
