@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@mui/material';
 
+import styles from './login_bttn.module.css'
 
 const Login_bttn = props => {
 
@@ -17,8 +18,8 @@ const Login_bttn = props => {
             }
             
         return(
-            <div>
-                <Button onClick={Login} variant='contained' size="small" color="success">Enter App</Button>
+            <div id={styles.logbtn}>
+                <Button onClick={Login} variant='contained' size="large" color="success">Enter App</Button>
             </div>
             )
 }

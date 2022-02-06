@@ -1,3 +1,9 @@
-#logo {
-    max-width: 7em;
+#Landing {
+    display: grid;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    justify-self: center;
 }

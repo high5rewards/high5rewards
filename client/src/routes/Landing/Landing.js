@@ -9,11 +9,15 @@ import Login_bttn from "./components/login_bttn"
 
 function Landing() {
   return (
-    <div>
+    <div id={styles.Landing}>
         <Landing_nav_top />
-        <img id={styles.logo} src={require('../../images/temp-logo.png')} alt='logo'/>
-        <h1>This is the landing page</h1>
+
+        <h3 className={styles.header}>Seamless</h3>
+        <h3 className={styles.header}>Subscription and Rewards NFTs</h3>
+
+
         <Login_bttn />
+
         <Landing_nav_bottom />
     </div>
   );

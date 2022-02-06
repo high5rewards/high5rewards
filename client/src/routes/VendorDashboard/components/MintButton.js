@@ -1,15 +1,20 @@
-// import { useState } from "react"
-// import { ethers } from 'ethers'
-// import { create as ipfsHttpClient } from 'ipfs-http-client'
-// import Web3Modal from 'web3modal'
+import { useState } from "react"
+import { ethers } from 'ethers'
+
+import { create as ipfsHttpClient } from 'ipfs-http-client'
+
+import Web3Modal from 'web3modal'
+
+// not compatible with create-react-app
 // import web3 from 'web3'
 
-// import { rewardcontractaddress, marketaddress } from '../../../Hardhat/config'
-// import Reward from '../../../Hardhat/contracts/Reward.sol'
-// import RewardsMarket from '../../../Hardhat/contracts/RewardsMarket.sol'
+
+import { rewardcontractaddress, marketaddress } from '../../../Hardhat/config'
+import Reward from '../../../Hardhat/contracts/Reward.sol'
+import RewardsMarket from '../../../Hardhat/contracts/RewardsMarket.sol'
 
 
-// import { Button } from '@mui/material';
+import { Button } from '@mui/material';
 
 
 
