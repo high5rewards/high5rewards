@@ -1,6 +1,7 @@
 #bottomnav{
     list-style-type: none;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
 
     margin: 0;
@@ -11,4 +12,16 @@
     position: relative;
     top: 10em;
 
+}
+
+/* collapse to three columns and two rows on mobile and tablet */
+@media(max-width: 614px){
+    #bottomnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #bottomnav li {
+        justify-self: center;
+    }
 }

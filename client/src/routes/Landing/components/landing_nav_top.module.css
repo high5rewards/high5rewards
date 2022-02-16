@@ -24,3 +24,16 @@
     padding-left: 1em;
     padding-right: 1em;
 }
+
+/* hamburger icon */
+#hamNav{
+    padding-top: 0.2em;
+    /* border: 1px solid blue; */
+}
+
+/* collapse topnav buttons into hamburger nav on small screens*/
+@media (max-width: 664px){
+    .topBtn{
+        display: none;
+    }
+}

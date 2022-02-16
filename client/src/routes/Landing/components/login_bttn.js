@@ -12,17 +12,22 @@ const Login_bttn = props => {
         let navigate = useNavigate();
 
         async function Login() {
-            const user = await Moralis.authenticate()
-            console.log(user.id)
-            navigate('app/marketplace')
+            try {
+                const user = await Moralis.authenticate()
+                console.log('user auth', user.id)
+                navigate('app/marketplace')
+            } catch(e) {
+                console.log(e)
+                navigate('app/marketplace')
             }
+        }
             
         return(
             <div id={styles.logbtn}>
                 <Button onClick={Login} variant='contained' size="large" style={{
                 color: '#424242',
                 backgroundColor: '#00e676',
-            }}>Enter App</Button>
+            }}>connect wallet</Button>
             </div>
             )
 

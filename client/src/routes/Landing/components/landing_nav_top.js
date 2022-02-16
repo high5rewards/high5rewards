@@ -1,5 +1,7 @@
 import React from "react";
 
+import MenuIcon from '@mui/icons-material/Menu';
+
 import styles from './landing_nav_top.module.css'
 
 const Landing_nav_top = props => {
@@ -7,10 +9,10 @@ const Landing_nav_top = props => {
         <div id={styles.main}>
             <h4>High 5 Rewards</h4>
             <ul id={styles.toplist}>
-                <li><h5>FAQs</h5></li>
-                <li><h5>Developers</h5></li>
-                <li><h5>Security</h5></li>
-                <li><h5>Ξ</h5></li>
+                <li className={styles.topBtn}><h5>FAQs</h5></li>
+                <li className={styles.topBtn}><h5>Developers</h5></li>
+                <li className={styles.topBtn}><h5>Security</h5></li>
+                <li id={styles.hamNav}><h5><MenuIcon /></h5></li>
             </ul>
         </div>
         )
