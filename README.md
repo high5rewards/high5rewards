@@ -14,21 +14,21 @@ High 5 Rewards is built for everyone, and we intend to keep it accessible and fu
 
 ## Walkthrough
 
-![landing](https://github.com/high5rewards/high5rewards/client/src/screenshots/0landing.png?raw=true)
+![landing](https://github.com/high5rewards/high5rewards/blob/main/client/src/screenshots/0landing.png?raw=true)
 
 Sam wants to both sell subscription NFTs and buy his own subscription NFTs. To enter the app, he clicks "connect wallet" to open a dialog box in his Metamask browser wallet. After approving the transaction, he is logged in through his wallet and redirected to the app.
 
-![marketplace](https://github.com/high5rewards/high5rewards/client/src/screenshots/1market.png?raw=true)
+![marketplace](https://github.com/high5rewards/high5rewards/blob/main/client/src/screenshots/1market.png?raw=true)
 
 In the marketplace, Sam can see all the approved vendors who list subscription NFTs. He's interested in Mocha Madness because he buys a coffee from them daily, trades crypto on decentralized finance platforms, and would like a way to bridge those two worlds.
 
-![subscriptions](https://github.com/high5rewards/high5rewards/client/src/screenshots/2subscriptions.png?raw=true)
+![subscriptions](https://github.com/high5rewards/high5rewards/blob/main/client/src/screenshots/2subscriptions.png?raw=true)
 
 Sam purchased a 6 month Loyal Bean from the Mocha Madness coffee shop. This allows him to walk to Mocha Madness, show the barista his NFT, and co-sign a smart contract which toggles a boolean value in his NFT's JSON metadata, "usedToday." This value prevents customers, through dishonesty or forgetfulness, from receiving more items than they paid for. It will be set to "false" again in 24 hours. 
 
 While enjoying his hot cup of coffee, Sam reads about his new reward NFT. He previously purchased another 6 month subscription to Mocha Madness. When the 6 month period was up and his subscription was paid in full, that subscription NFT was burned and a new rewards NFT was minted and sent to his wallet. This rewards NFT, a JPEG coffee cup on a saucer, allows the owner to receive one month of free coffee upon executing a smart contract on High 5 Rewards. Sam's friend, Jacob, is also into DeFi and NFTs but doesn't use High 5 Rewards. Sam sends his reward NFT to Jacob to introduce him to the platform. 
 
-![vendor](https://github.com/high5rewards/high5rewards/client/src/screenshots/3vendor.png?raw=true)
+![vendor](https://github.com/high5rewards/high5rewards/blob/main/client/src/screenshots/3vendor.png?raw=true)
 
 Sam is starting up his own coffee shop. He is friends with the owner of Mocha Madness, and they agree to deploy rewards NFTs which can be used at either of their stores. On the Vendor Dashboard tab, he can view all the subscription NFTs he has set up to deploy to his vendor page on the Marketplace tab. He may also mint a new NFT by uploading art and key properties.  
 
