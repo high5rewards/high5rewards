@@ -1,5 +1,6 @@
 import React from "react";
 
+//TODO: smart contract middleware
 // import MintButton from './components/MintButton';
 
 import styles from "./VendorDashboard.module.css";

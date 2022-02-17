@@ -2,10 +2,12 @@ import React from "react";
 
 import styles from "./Subscriptions.module.css";
  
+// sample subscription NFTs
 import loyalBean from '../../images/loyalBean.png'
 import wine from '../../images/wine.png'
 import rewardCoffee from '../../images/rewardCoffee.png'
 
+// display logged in user's current NFT subscriptions, and their reward NFTs for paying off old subscriptions
 function Subscriptions() {
   return (
     <div id={styles.subs}>

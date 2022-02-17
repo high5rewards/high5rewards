@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from './landing_nav_bottom.module.css'
 
+// bottom navbar for landing page
 const Landing_nav_bottom = props => {
     return(
         <ul id={styles.bottomnav}>

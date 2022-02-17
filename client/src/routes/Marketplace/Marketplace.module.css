@@ -1,9 +1,13 @@
+/* format vendor cards in NFT marketplace */
 #stores{
     display: flex;
 
     justify-content: center;
 
-    margin-top: 6em
+    margin-top: 6em;
+
+    margin-left: 1.25em;
+    margin-right: 1.25em;
 }
 #stores > *:first-of-type {
     margin-right: 5em;

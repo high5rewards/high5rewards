@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './logout_bttn.module.css'
 
+// disconnect user wallet and return to landing page
 const Logout_bttn = props => {
 
         let navigate = useNavigate();

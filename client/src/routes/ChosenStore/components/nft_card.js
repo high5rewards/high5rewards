@@ -7,6 +7,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 import { useNavigate } from 'react-router-dom';
 
+// individual NFT subscription market card
 const NFT_card = props => {
 
     let navigate = useNavigate();

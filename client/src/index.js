@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
-
+//connect to Moralis server 
 import {MoralisProvider} from "react-moralis";
 // import reportWebVitals from './reportWebVitals';
 

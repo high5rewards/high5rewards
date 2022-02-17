@@ -2,6 +2,7 @@ import React from 'react';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
+// individual routes
 import Landing from './routes/Landing/Landing';
 
 import Shared from './routes/Shared/Shared';
@@ -14,7 +15,6 @@ import Subscriptions from './routes/Subscriptions/Subscriptions';
 import ChosenSubscription from './routes/ChosenSubscription/ChosenSubscription';
 
 import VendorDashboard from './routes/VendorDashboard/VendorDashboard';
-
 
 import Err from './routes/Err/Err';
 

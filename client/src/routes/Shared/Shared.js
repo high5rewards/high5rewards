@@ -3,11 +3,10 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import Main_nav from "./components/main_nav"
-import Logout_bttn from "./components/logout_bttn"
-
 
 import styles from "./Shared.module.css";
 
+// top nav to share between app routes
 function Shared() {
   return (
     <div>
@@ -17,7 +16,6 @@ function Shared() {
 
       <div id={styles.sharenav}>
         < Main_nav />
-        <Logout_bttn />
       </div>
     </nav>
 

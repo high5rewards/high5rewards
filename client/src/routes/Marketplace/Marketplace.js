@@ -10,7 +10,7 @@ import Store_card from "./components/store_card"
 import coffee from '../../images/coffee.png'
 import wine from '../../images/wine.png'
 
-
+// display vendors who have deployed subscription NFTs on the platform
 const Marketplace = props => {
     const storeName0 = "Mocha Madness"
     const storeDesc0 = 'A coffee shop where devs get together.'

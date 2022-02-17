@@ -2,6 +2,14 @@
     display: grid;
 }
 
+/* hand with 5 imprint logo */
+#logo{
+    width: 10em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-self: center;
+}
+
 .header{
     margin: 0;
     margin-left: 1.25em;
@@ -11,10 +19,12 @@
     color: #00c853;
 }
 
-#logo{
-    width: 10em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+/* text explaining purpose of the app  */
+.subheader{
+    margin: 0;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    padding: 0;
     justify-self: center;
+    color: #00c853;
 }
-

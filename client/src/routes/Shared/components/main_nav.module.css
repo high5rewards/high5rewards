@@ -1,3 +1,93 @@
+/* for entire navbar */
+#mainNav{
+    /* border: 2px solid red; */
+
+}
+
+/* for individual nav items */
 .navitem{
+    border: 2px solid blue;
     cursor:pointer;
+}
+
+
+/* hamburger menu for mobile and tablet */
+#hamContainer{
+    position:absolute;
+    top: 1.3em;
+    right: 1em;
+}
+
+
+
+/* container to position menu and hide when closed */
+#menuContainer{
+    width: 20em;
+    height: 39em;
+
+    position: absolute;
+    right: 0;
+    top: 6em;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+/* menu to slide in from right  */
+#menu
+{
+  position: relative;
+  
+  background: #212121;
+  list-style-type: none;
+
+  box-sizing: border-box;
+
+  width: 19.5em;
+  height: 38em;
+
+  top: -0.86em;
+
+  transition: all .3s;
+
+  z-index: 1;
+
+  border-left: 3px solid #616161;
+  border-bottom: 3px solid #616161;
+
+  display: grid;
+}
+
+/* menu item styles */
+#menu li
+{
+  padding: 2em;
+}
+
+/* open and closed positions */
+.open{
+    margin-left: 0.5em;
+}
+.closed{
+    margin-left: 20em;
+}
+
+/* responsive design */
+
+
+#desktop{
+    display: flex;
+}
+#mobile{
+    display: none;
+}
+
+@media(max-width: 920px){
+    #desktop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
 }

@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import styles from './landing_nav_top.module.css'
 
+// top navbar for landing page
 const Landing_nav_top = props => {
     return(
         <div id={styles.main}>

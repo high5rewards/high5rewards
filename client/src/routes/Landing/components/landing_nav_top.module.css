@@ -1,3 +1,4 @@
+/* top navbar for landing page */
 #main{
     background-color: #212121; /* dark grey */
     display: flex;
@@ -28,7 +29,6 @@
 /* hamburger icon */
 #hamNav{
     padding-top: 0.2em;
-    /* border: 1px solid blue; */
 }
 
 /* collapse topnav buttons into hamburger nav on small screens*/

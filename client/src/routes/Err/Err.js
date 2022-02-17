@@ -2,9 +2,10 @@ import React from "react";
 
 import styles from "./Err.module.css";
 
+// custom 404 page
 function Err() {
   return (
-    <div>
+    <div id={styles.err}>
         Error 404
     </div>
   );

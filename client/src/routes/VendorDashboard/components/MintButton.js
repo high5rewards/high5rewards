@@ -5,7 +5,7 @@ import { create as ipfsHttpClient } from 'ipfs-http-client'
 
 import Web3Modal from 'web3modal'
 
-// not compatible with create-react-app
+// incompatible with create-react-app
 // import web3 from 'web3'
 
 

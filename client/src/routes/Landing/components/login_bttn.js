@@ -7,6 +7,7 @@ import { Button } from '@mui/material';
 
 import styles from './login_bttn.module.css'
 
+// handle Moralis login and routing
 const Login_bttn = props => {
 
         let navigate = useNavigate();

@@ -8,10 +8,7 @@ import Typography from '@mui/material/Typography';
 
 import { useNavigate } from 'react-router-dom';
 
-
-
-
-
+//individual vendor display
 const Store_card = props => { {
 
     const {storeName} = props
